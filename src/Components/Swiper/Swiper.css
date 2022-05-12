@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+  .swiper_pc {
+    display: none;
+  }
+  .swiper_mobile {
+    display: flex;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .swiper_mobile {
+    display: none;
+  }
+}

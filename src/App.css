@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.nav_bottom_container {
+  width: 80%;
+}
+.nav_bottom {
+  background-color: #2e3cb6;
+  padding-top: 30px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_bottom_title {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav_bottom_para {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 18px;
+}

@@ -1,0 +1,73 @@
+.header_logo {
+  max-width: 400px;
+  max-height: 300px;
+}
+.nav-container {
+  width: 100%;
+  padding: 10px;
+}
+.hfref_header_div {
+}
+.href_header {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+  text-decoration: none;
+}
+.call_btn {
+  background-color: #2e3cb6;
+}
+.header_item {
+  padding-left: 20px;
+}
+.header_mobile {
+  display: none;
+}
+.header_logo_mobile {
+  max-width: 300px;
+  max-height: 250px;
+}
+.header_mobile_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.header_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 996px) {
+  .header {
+    display: none;
+  }
+  .header_mobile {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    display: none;
+  }
+  .header_mobile {
+    display: flex;
+    flex-direction: row;
+  }
+  .header_logo_mobile {
+    max-width: 150px;
+    max-height: 100px;
+  }
+  .header_item_mobile {
+    padding-left: 20px;
+  }
+  .drop_a {
+    color: #2e3cb6;
+  }
+}

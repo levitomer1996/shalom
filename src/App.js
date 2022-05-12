@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Components/Header/Header";
+import Main from "./Pages/Main";
+import Home from "./Pages/Home/Home";
+import { ParallaxProvider } from "react-scroll-parallax";
+import NavBottom from "./Components/NavBottom";
+import MobileHeader from "./Components/Header/MobileHeader";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ParallaxProvider>
+      <div className="App">
+        <Header />
+        <MobileHeader />
+        <Main />
+        <NavBottom />
+      </div>
+    </ParallaxProvider>
   );
 }
 

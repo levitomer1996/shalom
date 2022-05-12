@@ -1,0 +1,73 @@
+.home_about {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_about_header {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+.home_about_sub_header {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  font-size: 35px;
+  padding: 10px;
+}
+.home_about_para_cont {
+  width: 65%;
+}
+.home_about_para_text {
+  font-size: 20px;
+  color: rgb(62, 59, 58);
+}
+.service_icon_container {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceIcon_Paragraph {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  color: #2e3cb6;
+  font-weight: bold;
+}
+.swiper_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.swiper_title {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  font-size: 45px;
+}
+.service_icon_container_mobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  .home_about_para_cont {
+    width: 100%;
+  }
+  #pc_parallax {
+    display: none;
+  }
+  .service_icon_container_mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+  }
+  .serviceIcon_Paragraph {
+    font-family: "Suez One", serif;
+    font-family: "Varela Round", sans-serif;
+    color: #2e3cb6;
+    font-size: 50;
+  }
+}
