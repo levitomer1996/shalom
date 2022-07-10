@@ -9,6 +9,10 @@ import Swiper from "../../Components/Swiper/Swiper";
 import ServiceIconMobile from "./Comps/ServiceIconMobile";
 import SwiperMobile from "../../Components/Swiper/SwiperMobile";
 
+import twenty_four_seven from "./assets/24.svg";
+import natural_gas from "./assets/natural-gas.svg";
+import pressure from "./assets/pressure-gauge.svg";
+import tubes from "./assets/tubes.svg";
 const Home = () => {
   const [iconSize, setIconSize] = useState(100);
   const [parallaxDirection, setParallaxDirection] = useState("top");
@@ -23,19 +27,19 @@ const Home = () => {
   const icons_img_list = [
     {
       title: " צוות חירום לעבודות דחופות 24 שעות ביממה ",
-      link: "https://i.ibb.co/bBj3SJ5/24-hours-phone-service.png",
+      link: twenty_four_seven,
     },
     {
       title: 'התקנת מזח"ים ותחזוקתם',
-      link: "https://i.ibb.co/3h982B5/pressure-gauge.png",
+      link: pressure,
     },
     {
       title: "איתור פיצוצי מים ותיקונם",
-      link: "https://i.ibb.co/T2HDXNb/natural-gas-1.png",
+      link: natural_gas,
     },
     {
       title: "תשתיות מים ביוב וניקוז",
-      link: "https://i.ibb.co/DCMjd30/2823606.png",
+      link: tubes,
     },
   ];
   return (
@@ -83,8 +87,8 @@ const Home = () => {
           })}
         </div>
       </Parallax>
-
       <div className="service_icon_container_mobile">
+        <img width={100} height={100} />
         {icons_img_list.map(({ title, link }) => {
           return <ServiceIconMobile title={title} src={link} />;
         })}
