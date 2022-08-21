@@ -6,6 +6,6 @@ import tool from "./Comps/svgs/tool-box.svg";
 export default [
   { title: "אודות", link: "/about", icon: info },
   { title: "פרוייקטים", link: "/projects", icon: projects },
-  { title: "התקנת-מזחים", link: "/התקנת-מזחים", icon: tool },
+  { title: "התקנת-מזחים", link: "/pier", icon: tool },
   { title: "צור קשר", link: "/contact", icon: phone },
 ];

@@ -3,7 +3,8 @@ import "./Header.css";
 import a_list from "./a_list";
 import HeaderLogo from "./Comps/HeaderLogo";
 import HrefRow from "./Comps/HrefRow";
-import Button from "@mui/material/Button";
+import phone from "./phone.json";
+import Lottie from "lottie-react";
 
 const Header = () => {
   return (
@@ -16,7 +17,16 @@ const Header = () => {
           <HrefRow />
         </div>
         <div className="header_item">
-          <a href="tel:+972527808058" class="btn btn-primary call_btn"></a>
+          <a href="tel:+972527808058" style={{ textDecoration: "none" }}>
+            <div className="phone_container">
+              <Lottie
+                style={{ width: 50, height: 50 }}
+                animationData={phone}
+                loop={true}
+              />
+              <p className="phone_container_p">התקשר 052-7808058</p>
+            </div>
+          </a>
         </div>
       </div>
     </header>

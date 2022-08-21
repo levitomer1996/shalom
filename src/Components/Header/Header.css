@@ -63,6 +63,17 @@ flex-direction: column;
   transition: 1000ms;
   height: 100px;
 }
+.phone_container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.phone_container_p{
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  color: #2e3cb6;
+}
 .call_btn {
   background-color: #2e3cb6;
 }

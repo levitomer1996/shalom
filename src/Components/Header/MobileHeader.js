@@ -39,9 +39,7 @@ const MobileHeader = () => {
             </div>
           </div>
         </div>
-        <div className="header_item_mobile">
-          <button>Tomer</button>
-        </div>
+        <div className="header_item_mobile"></div>
       </div>
     </header>
   );
