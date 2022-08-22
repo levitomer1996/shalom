@@ -1,11 +1,17 @@
+.contact_root {
+  font-family: "Suez One", serif;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contact_svg {
   color: #2e3cb6;
 }
 .a_contact {
   color: black;
   text-decoration: none;
-  font-family: "Suez One", serif;
-  font-family: "Varela Round", sans-serif;
 }
 table {
   width: 70%;
@@ -13,11 +19,13 @@ table {
 th {
   font-size: 20px;
   padding: 30px;
-  font-family: "Suez One", serif;
-  font-family: "Varela Round", sans-serif;
 }
 .mobile_contact {
   display: none;
+}
+.contactform_title {
+  font-size: 30px;
+  color: #2e3cb6;
 }
 @media (max-width: 576px) {
   svg {
@@ -35,16 +43,14 @@ th {
   .contact_p_det {
     color: black;
     text-decoration: none;
-    font-family: "Suez One", serif;
-    font-family: "Varela Round", sans-serif;
+
     font-size: 20px;
     font-weight: bold;
   }
   .contact_p_name {
     color: #2e3cb6;
     text-decoration: none;
-    font-family: "Suez One", serif;
-    font-family: "Varela Round", sans-serif;
+
     font-size: 30px;
     font-weight: bold;
   }

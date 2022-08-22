@@ -1,19 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "./Projects.css";
-import img2 from "./Assets/2.png";
-import img1 from "./Assets/Untitled.png";
-import img3 from "./Assets/Untitled3.png";
-import img5 from "./Assets/Untitled5.png";
-import img4 from "./Assets/Untitled4.png";
-import img6 from "./Assets/Untitled7.png";
-import img7 from "./Assets/Untitled8.png";
-import img8 from "./Assets/Untitled9.png";
+
 import Lottie from "lottie-react";
 import digger from "./digger.json";
+import Carousel from "../../Components/Carousel/Carousel";
+import CarouselImgList from "../../Assets/CarouselImgList";
+import Swiper from "../../Components/Swiper/Swiper";
 
 const Projects = () => {
-  const imagesList = [img1, img2, img3, img4, img5, img6, img7, img8];
   return (
     <div className="projects">
       <Helmet>
@@ -49,9 +44,12 @@ const Projects = () => {
         </p>
       </div>
       <div className="images_container">
-        {imagesList.map((item) => {
+        {CarouselImgList.map((item) => {
           return <img src={item} className={"imageList"} />;
         })}
+      </div>
+      <div className="images_container_mobile">
+        <Swiper images={CarouselImgList} />
       </div>
     </div>
   );

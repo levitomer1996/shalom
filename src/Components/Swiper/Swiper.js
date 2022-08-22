@@ -4,39 +4,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "./Swiper.css";
-export default () => {
+import Carousel from "../Carousel/Carousel";
+export default ({ images }) => {
   return (
-    <Swiper
-      spaceBetween={10}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-      className="swiper_pc"
-    >
-      <SwiperSlide>
-        <img
-          src="https://i.ibb.co/fGq8XC7/IMG-20200329-WA0021-02c28341-640w.webp"
-          style={{ width: 300, height: 300 }}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src="https://i.ibb.co/fGq8XC7/IMG-20200329-WA0021-02c28341-640w.webp"
-          style={{ width: 300, height: 300 }}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src="https://i.ibb.co/fGq8XC7/IMG-20200329-WA0021-02c28341-640w.webp"
-          style={{ width: 300, height: 300 }}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src="https://i.ibb.co/fGq8XC7/IMG-20200329-WA0021-02c28341-640w.webp"
-          style={{ width: 300, height: 300 }}
-        />
-      </SwiperSlide>
-    </Swiper>
+    <>
+      <div className="swiper_pc">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={3}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          {images.map((img) => {
+            return (
+              <SwiperSlide>
+                <img src={img} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+      <div className="swiper_mobile">
+        <Carousel images={images} />
+      </div>
+    </>
   );
 };

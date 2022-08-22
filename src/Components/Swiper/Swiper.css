@@ -3,7 +3,6 @@
     display: none;
   }
   .swiper_mobile {
-    display: flex;
     padding-bottom: 20px;
   }
 }

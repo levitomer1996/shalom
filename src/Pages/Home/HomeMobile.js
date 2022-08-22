@@ -1,7 +1,11 @@
 import React from "react";
 import Swiper from "../../Components/Swiper/Swiper";
 import "./Home.css";
-
+import Button from "@mui/material/Button";
+import CarouselImgList from "../../Assets/CarouselImgList";
+import IconImgList from "./assets/IconImgList";
+import ServiceIconMobile from "./Comps/ServiceIconMobile";
+import Margin from "../../Components/Margin";
 const HomeMobile = () => {
   return (
     <div className="home_root_mobile">
@@ -15,8 +19,21 @@ const HomeMobile = () => {
           איתור פיצוצי מים ותיקונם ע"י מכשירים מתקדמים מהטובים בשוק. שלום נטף
           הינו קבלן רשום מספר 32659
         </p>
+        <Button
+          href="/about"
+          variant="contained"
+          style={{ backgroundColor: "#2e3cb6" }}
+        >
+          קרא עוד
+        </Button>
       </div>
-      <Swiper />
+      <Margin bottom={10} />
+      <div>
+        {IconImgList.map(({ title, link }) => {
+          return <ServiceIconMobile title={title} src={link} />;
+        })}
+      </div>
+      {/* <Swiper image={CarouselImgList} /> */}
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import React from "react";
+import ContactForm from "./Comps/ContactForm";
 import "./Contact.css";
 const Contact = () => {
   return (
-    <div>
+    <div className="contact_root">
       <table className="table_pc">
         <tr>
           <th></th>
@@ -115,6 +116,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ContactForm />
     </div>
   );
 };
