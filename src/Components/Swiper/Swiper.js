@@ -5,7 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./Swiper.css";
 import Carousel from "../Carousel/Carousel";
-export default ({ images }) => {
+import RecommendationCard from "../Card/RecommendationCard";
+export default ({ images, type, comments }) => {
   return (
     <>
       <div className="swiper_pc">
@@ -18,7 +19,7 @@ export default ({ images }) => {
           {images.map((img) => {
             return (
               <SwiperSlide>
-                <img src={img} />
+                <img src={img} style={{ width: 400, height: 400 }} />
               </SwiperSlide>
             );
           })}

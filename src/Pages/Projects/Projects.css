@@ -45,10 +45,19 @@
   padding: 20px;
   height: 250px;
 }
+.imageList:hover {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -moz-transform: scale(1.1); /* Firefox */
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -o-transform: scale(1.1); /* Opera */
+}
 .images_container_mobile {
   display: none;
 }
-
+.projects_mobile {
+  display: none;
+}
 @media (max-width: 576px) {
   .images_container {
     display: none;
@@ -57,6 +66,12 @@
     width: 80%;
   }
   .images_container_mobile {
+    display: inline-block;
+  }
+  .projects {
+    display: none;
+  }
+  .projects_mobile {
     display: flex;
   }
 }

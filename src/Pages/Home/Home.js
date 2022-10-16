@@ -12,6 +12,8 @@ import HomeMobile from "./HomeMobile";
 import IconImgList from "./assets/IconImgList";
 import CarouselImgList from "../../Assets/CarouselImgList";
 import Parallex from "../../Components/Parallex/Parallex";
+import comments from "./comments";
+import SwiperComments from "../../Components/Swiper/SwiperComments";
 
 const Home = () => {
   const [iconSize, setIconSize] = useState(100);
@@ -58,9 +60,10 @@ const Home = () => {
         </div>
 
         <div className="swiper_container">
+          <p className="swiper_title">המלצות</p>
+          <SwiperComments comments={comments} />
           <p className="swiper_title">הפרוייקטים שלנו</p>
-
-          <Swiper images={CarouselImgList} />
+          <Swiper images={CarouselImgList} type="images" />
 
           <Margin bottom={10} />
           <a
