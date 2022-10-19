@@ -6,7 +6,9 @@ import "swiper/css";
 import "./Swiper.css";
 import Carousel from "../Carousel/Carousel";
 import RecommendationCard from "../Card/RecommendationCard";
+import SwiperCore, { Autoplay, EffectFade } from "swiper";
 export default ({ images, type, comments }) => {
+  SwiperCore.use([Autoplay, EffectFade]);
   return (
     <>
       <div className="swiper_pc">
@@ -15,6 +17,13 @@ export default ({ images, type, comments }) => {
           slidesPerView={3}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          fadeEffect={{
+            crossFade: true, // enables slides to cross fade
+          }}
         >
           {images.map((img) => {
             return (

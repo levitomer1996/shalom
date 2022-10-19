@@ -6,6 +6,8 @@ import CarouselImgList from "../../Assets/CarouselImgList";
 import IconImgList from "./assets/IconImgList";
 import ServiceIconMobile from "./Comps/ServiceIconMobile";
 import Margin from "../../Components/Margin";
+import SwiperComments from "../../Components/Swiper/SwiperComments";
+import comments from "./comments";
 const HomeMobile = () => {
   return (
     <div className="home_root_mobile">
@@ -33,7 +35,7 @@ const HomeMobile = () => {
           return <ServiceIconMobile title={title} src={link} />;
         })}
       </div>
-      {/* <Swiper image={CarouselImgList} /> */}
+      <SwiperComments comments={comments} />
     </div>
   );
 };
